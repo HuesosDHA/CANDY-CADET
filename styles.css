@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e9e8d0;
+    margin: 0;
+    padding: 25px;
+    color: #670404;
+
+}
+
+
+
+h1, h2, h3 {
+    color: #4a6c05;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* Estilo para el header con fondo de imagen */
+header {
+    position: relative;
+    height: 400px;
+    background-image: url(https://png.pngtree.com/png-clipart/20230824/original/pngtree-cartoon-candies-candy-sweet-dessert-picture-image_8424800.png);
+    background-size: cover;
+    background-position: center;
+    color: #742121;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(10, 10, 10, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    color: #18311f;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #2b6036;
+}
+
+/* Ajustes para los productos */
+#products .product-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 1000px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #cae48f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Estilos para la sección de comentarios */
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    resize: none;
+    height: 100px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 36px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.stars input:checked ~ label {
+    color: #f1c40f; /* Color dorado cuando se selecciona */
+}
+
+.stars input:hover ~ label,
+.stars input:checked + label:hover,
+.stars input:checked + label:hover ~ label {
+    color: #f39c12; /* Color amarillo cuando se pasa el cursor o se selecciona */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
